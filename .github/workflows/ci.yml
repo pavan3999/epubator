@@ -29,9 +29,13 @@ jobs:
         with:
           java-version: 1.8
 
+      - uses: actions/setup-android@v3
+        with:
+          ndk-version: '21.0.6113669'
+             
       - uses: nttld/setup-ndk@v1
         with:
-          ndk-version: r21e
+          ndk-version: r21
           local-cache: true
       
       - name: Copy CI gradle.properties
