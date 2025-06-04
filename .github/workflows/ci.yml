@@ -33,7 +33,7 @@ jobs:
       - uses: android-actions/setup-android@v3
 
       - uses: actions/checkout@v4
-      - uses: nttld/setup-ndk@v1Add commentMore actions
+      - uses: nttld/setup-ndk@v1
         with:
           ndk-version: r21
           local-cache: true
