@@ -30,7 +30,7 @@ jobs:
           java-version: 1.8
 
       - name: Get NDK 
-        run: sudo ${ANDROID_HOME}/tools/bin/sdkmanager --install "ndk;21.0.6113669"
+        run: echo "y" | sudo ${ANDROID_HOME}/tools/bin/sdkmanager --install "ndk;21.0.6113669" --sdk_root=${ANDROID_SDK_ROOT}
 
       - name: Copy CI gradle.properties
         run: |
